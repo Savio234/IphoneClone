@@ -1,5 +1,4 @@
 import React from 'react'
-// import { appleImg, bagImg, searchImg } from '@/utils'
 import Image from 'next/image'
 import styles from './Navbar.module.css'
 import { navLists } from '@/constants'
@@ -7,18 +6,21 @@ import { navLists } from '@/constants'
 const Navbar = () => {
   return (
     <header className={`${styles.header} w-full flex py-[1.6rem] px-5 justify-between items-center `}>
-      <nav className={`${styles.nav} w-full flex items-center`}>
+      <nav className={`${styles.nav} w-full flex items-center justify-between`}>
         <div className={`${styles.logo}`}>
           <Image alt='logo' fill src={'/assets/images/apple.svg'} />
         </div>
         <div className={`${styles.devices_container} flex justify-center items-center gap-2`}>
           {navLists.map((device: string, index: number) =>
-            <div className={`${styles.device} text-sm px-5`} key={index}>
+            <div className={`${styles.device} text-2xl px-5 cursor-pointer 
+              text-gray hover:text-white transition-all`} 
+              key={index}
+            >
               {device}
             </div>
           )}
         </div>
-        <div>
+        <div className={`${styles.icons_container} flex items-center gap-6`}>
           <div className={styles.small_icons}>
             <Image alt='' fill src={'/assets/images/search.svg'} />
           </div>

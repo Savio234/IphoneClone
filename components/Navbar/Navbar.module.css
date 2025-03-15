@@ -1,7 +1,11 @@
+
+.nav {
+    position: relative;
+}
 .logo {
     position: relative;
-    width: 1.4rem;
-    height: 1.8rem;
+    width: 2.4rem;
+    height: 2.4rem;
 }
 .small_icons {
     position: relative;
