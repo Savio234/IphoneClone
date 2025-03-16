@@ -1,16 +1,16 @@
 
 .nav {
-    position: relative;
+  position: relative;
 }
 .logo {
-    position: relative;
-    width: 2.4rem;
-    height: 2.4rem;
+  position: relative;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 .small_icons {
-    position: relative;
-    width: 1.6rem;
-    height: 1.6rem;
+  position: relative;
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 @media screen and (max-width: 1023px) {
@@ -18,13 +18,15 @@
 }
   
 @media screen and (max-width: 650px) {
-    .devices_container {
-        display: none;
-    }
+  .devices_container {
+    display: none;
+  }
+  .header {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
 }
   
-  @media screen and (max-width: 485px) {
-    html, body, :root {
-      font-size: calc(100vw / 485 * 10);
-    }
-  }
+@media screen and (max-width: 485px) {
+  
+}

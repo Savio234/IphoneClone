@@ -7,3 +7,19 @@
 .hero_section::-webkit-scrollbar {
     display: none;
 }
+.hero_video_bg {
+    display: block;
+}
+.hero_video_sm {
+    display: none;
+}
+
+
+@media screen and (max-width: 650px) {
+    .hero_video_bg {
+      display: none;
+    }
+    .hero_video_sm {
+        display: block;
+    }
+}

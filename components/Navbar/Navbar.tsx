@@ -5,7 +5,7 @@ import { navLists } from '@/constants'
 
 const Navbar = () => {
   return (
-    <header className={`${styles.header} w-full flex py-[1.6rem] px-5 justify-between items-center `}>
+    <header className={`${styles.header} w-full flex py-[1.6rem] px-14 justify-between items-center `}>
       <nav className={`${styles.nav} w-full flex items-center justify-between`}>
         <div className={`${styles.logo}`}>
           <Image alt='logo' fill src={'/assets/images/apple.svg'} />
