@@ -1,0 +1,9 @@
+.hero_section {
+    position: relative;
+    height: calc(100vh - 6rem);
+    -ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.hero_section::-webkit-scrollbar {
+    display: none;
+}
