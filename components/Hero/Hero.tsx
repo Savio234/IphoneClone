@@ -30,7 +30,7 @@ const Hero = () => {
     })
     gsap.to('#cta', {
       opacity: 1,
-      y: -80,
+      y: -50,
       delay: 2
     })
   }, [])
