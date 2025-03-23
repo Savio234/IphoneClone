@@ -1,8 +1,8 @@
 'use client';
 import React, { useEffect, useState } from 'react'
 import gsap from 'gsap'
-import styles from './Hero.module.css'
 import Link from 'next/link';
+import styles from './Hero.module.css'
 
 const Hero = () => {
   const windowSize = window.innerWidth

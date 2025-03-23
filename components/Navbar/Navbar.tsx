@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from './Navbar.module.css'
 import { navLists } from '@/constants'
+import styles from './Navbar.module.css'
 
 const Navbar = () => {
   return (
