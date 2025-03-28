@@ -39,7 +39,6 @@ const Hero = () => {
       <div className={`${styles.hero_container} h-5/6 w-full flex-col flex-center`}>
         <h3 id='hero' className={`hero_title`}>iPhone 15 Pro</h3>
         <div className={`w-full h-full`}>
-        {/* <div className={`md:w-10/12 w-9/12`}> */}
           <video loop autoPlay muted playsInline className={`${styles.hero_video_bg} pointer-events-none`}>
             <source type='video/mp4' src={'/assets/videos/hero.mp4'} />
           </video>

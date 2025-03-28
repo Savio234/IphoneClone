@@ -14,7 +14,7 @@ const Highlights = () => {
     <section id='highlight' className={`h-full w-screen overflow-hidden bg-zinc common_padding`}>
       <div className={`w-full`}>
         <div className={`mb-12 w-full items-end flex justify-between`}>
-          <h1 id='title' className={`section-heading`}>
+          <h1 id='title' className={`section_heading`}>
             Get the highlights
           </h1>
           <div className={`flex flex-wrap items-end gap-5`}>
