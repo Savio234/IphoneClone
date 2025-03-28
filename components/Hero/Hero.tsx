@@ -5,24 +5,24 @@ import Link from 'next/link';
 import styles from './Hero.module.css'
 
 const Hero = () => {
-  const windowSize = window.innerWidth
-  const getVideoSrc = windowSize > 650 ? '/assets/videos/hero.mp4' : '/assets/videos/smallHero.mp4'
-  const [videoSrc, setVideoSrc] = useState<any>(getVideoSrc)
+  // const windowSize = window.innerWidth
+  // const getVideoSrc = windowSize > 650 ? '/assets/videos/hero.mp4' : '/assets/videos/smallHero.mp4'
+  // const [videoSrc, setVideoSrc] = useState<any>(getVideoSrc)
 
-  const handleVideoSrcSet = () => {
-    if (windowSize > 650) {
-      setVideoSrc('/assets/videos/hero.mp4')
-    } else {
-      setVideoSrc('/assets/videos/smallHero.mp4')
-    }
-  }
-  useEffect(() => {
-    window.addEventListener('resize', handleVideoSrcSet);
+  // const handleVideoSrcSet = () => {
+  //   if (windowSize > 650) {
+  //     setVideoSrc('/assets/videos/hero.mp4')
+  //   } else {
+  //     setVideoSrc('/assets/videos/smallHero.mp4')
+  //   }
+  // }
+  // useEffect(() => {
+  //   window.addEventListener('resize', handleVideoSrcSet);
 
-    return () => {
-      window.removeEventListener('resize', handleVideoSrcSet)
-    }
-  })
+  //   return () => {
+  //     window.removeEventListener('resize', handleVideoSrcSet)
+  //   }
+  // })
   useEffect(() => {
     gsap.to('#hero', {
       opacity: 1,
