@@ -64,7 +64,7 @@ canvas {
   }
 
   .feature_text_container {
-    @apply w-full flex-center flex-col md:flex-row mt-10 md:mt-16 gap-5
+    @apply w-full flex_center flex-col md:flex-row mt-10 md:mt-16 gap-5
   }
 
   .feature_video {
@@ -80,7 +80,7 @@ canvas {
   }
 
   .control_btn {
-    @apply ml-4 p-4 rounded-full bg-gray-300 backdrop-blur flex-center
+    @apply ml-4 p-4 rounded-full bg-gray-300 backdrop-blur flex_center
   }
 
   .hero_title {

@@ -1,0 +1,15 @@
+.video_div {
+    width: 2.5vw;
+}
+
+@media screen and (max-width: 1023px) {
+    .video_div {
+        width: 8vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .video_div {
+        width: 8vw;
+    }
+}

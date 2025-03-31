@@ -36,7 +36,7 @@ const Hero = () => {
   }, [])
   return (
     <section className={`${styles.hero_section} w-full`}>
-      <div className={`${styles.hero_container} h-5/6 w-full flex-col flex-center`}>
+      <div className={`${styles.hero_container} h-5/6 w-full flex-col flex_center`}>
         <h3 id='hero' className={`hero_title`}>iPhone 15 Pro</h3>
         <div className={`w-full h-full`}>
           <video loop autoPlay muted playsInline className={`${styles.hero_video_bg} pointer-events-none`}>
