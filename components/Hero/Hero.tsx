@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import gsap from 'gsap'
 import Link from 'next/link';
 import styles from './Hero.module.css'
@@ -50,11 +50,11 @@ const Hero = () => {
 
       <div id="cta" className={`flex flex-col items-center opacity-0 -translate-y-20`}>
         <Link href={'#highlight'}>
-          <div className={`btn h-[6.5rem] w-[15rem] rounded-[10rem] flex_center font-bold text-3xl`}>
+          <div className={`btn h-[6.5rem] w-[15rem] rounded-[10rem] flex_center font-bold text-3xl ${styles.cta_btn}`}>
             Buy
           </div>
         </Link>
-        <h3 className={`font-normal text-4xl`}>From $199/month or $999</h3>
+        <h3 className={`font-normal text-4xl ${styles.text}`}>From $199/month or $999</h3>
       </div>
     </section>
   )
