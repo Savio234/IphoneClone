@@ -34,6 +34,71 @@ const Hero = () => {
       delay: 2
     })
   }, [])
+  'To happens once'
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //       (entries) => {
+  //           entries.forEach((entry) => {
+  //           if (entry.isIntersecting && !hasAnimated.current) {
+  //               const counters = sectionRef.current?.querySelectorAll('[data-count]');
+  //               counters?.forEach((counter) => {
+  //                   const target = parseInt(counter.getAttribute('data-count') || '0');
+  //                       animateCounter(counter as HTMLElement, 0, target, 2000); // 2 seconds
+  //                   }
+  //               );
+  //               hasAnimated.current = true;
+  //           }
+  //           });
+  //       },
+  //       { threshold: 0.2 }
+  //   );
+
+  //   if (sectionRef.current) {
+  //       observer.observe(sectionRef.current);
+  //   }
+
+  //   return () => {
+  //       if (sectionRef.current) {
+  //           observer.unobserve(sectionRef.current);
+  //       }
+  //   };
+  // }, []);
+
+  'To happens more than once'
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         const counters = sectionRef.current?.querySelectorAll('[data-count]');
+  //         if (entry.isIntersecting) {
+  //           // Animate when section enters viewport
+  //           counters?.forEach((counter) => {
+  //             const target = parseInt(counter.getAttribute('data-count') || '0');
+  //             animateCounter(counter as HTMLElement, 0, target, 2000); // 2 seconds
+  //           });
+  //         } else {
+  //           // Reset counters to 0 when section leaves viewport
+  //           counters?.forEach((counter) => {
+  //             counter.textContent = '0';
+  //           });
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.3 } // Trigger when 30% of section is visible
+  //   );
+
+  //   if (sectionRef.current) {
+  //     observer.observe(sectionRef.current);
+  //   }
+
+  //   return () => {
+  //     if (sectionRef.current) {
+  //       observer.unobserve(sectionRef.current);
+  //     }
+  //   };
+  // }, []);
   return (
     <section className={`${styles.hero_section} w-full`}>
       <div className={`${styles.hero_container} h-5/6 w-full flex-col flex_center`}>
